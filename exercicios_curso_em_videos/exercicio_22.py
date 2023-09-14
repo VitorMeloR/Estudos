@@ -1,0 +1,8 @@
+nome = str(input('digite seu nome completo: ')).strip()
+nomes = nome.replace(' ', '')
+print(f'a quantidade de letras do seu nome é: {len(nomes)}')
+print(f'seu nome em maiusculo é: {nome.upper()}')
+print(f'seu nome em minusculo é: {nome.lower()}')
+pri = nome.find(' ')
+print(f'seu primeiro nome é: {nome[:pri]}')
+print(f'seu primeiro nome tem {pri} letras')

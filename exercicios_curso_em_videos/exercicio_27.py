@@ -1,0 +1,6 @@
+nome = str(input('digite seu nome completo: ')).strip().lower()
+pri_nome = nome.find(' ')
+ult_nome = nome.rfind(' ')
+print(f'é um prazer te conhecer {nome}')
+print(f'seu primeiro nome é {nome[:pri_nome]}')
+print(f'seu ultimo nome é{nome[ult_nome:]}')

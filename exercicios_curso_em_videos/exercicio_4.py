@@ -1,0 +1,6 @@
+variavel = input("digite uma variavel: ")
+print("esta variavel é só espaços? ", variavel.isspace())
+print('esta variavel contem apenas numero' , variavel.isnumeric())
+print('esta variavel é apenas alfabeticos?' , variavel.isalpha())
+print('esta variabel é apenas alfanumericos?' , variavel.isalnum)
+print('esta variavel é apenas digitos' , variavel.isdigit())
