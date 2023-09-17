@@ -33,3 +33,4 @@ def matriz_sod():
     wb.save('matriz.xlsx')
     print('sistema encerrado')
 
+teste = matriz_sod()

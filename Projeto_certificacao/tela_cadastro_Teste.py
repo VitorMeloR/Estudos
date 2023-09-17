@@ -1,5 +1,4 @@
-import base_dados
-import matriz_sod
+import base_dados_Excel_Teste as bd
 import PySimpleGUI as sg
 
 class Tela:
@@ -17,7 +16,7 @@ class Tela:
         self.janela = sg.Window('Tela de cadastro', layout=self.layout)
 
     def sistema_login(self, login_digitado):
-        verificar_login = base_dados.login(login_digitado)
+        verificar_login = bd.login(login_digitado)
         if not verificar_login:
             sg.popup_error('LOGIN DEVE CONTER 5 A 15 CARACTERES')
             self.error_login = False
@@ -26,7 +25,7 @@ class Tela:
             return verificar_login
 
     def sistema_senha(self,senha_digitada):
-        verificar_senha = base_dados.senha(senha_digitada)
+        verificar_senha = bd.senha(senha_digitada)
         if not verificar_senha:
             sg.popup_error('A senha deve conter pelo menos 1 caractere especial, 1 número e 1 letra maiúscula.')
             self.error_senha = False
@@ -38,7 +37,7 @@ class Tela:
             return verificar_senha
 
     def sistema_cpf(self, cpf_digitado):
-        verificar_cpf = base_dados.cpf(cpf_digitado)
+        verificar_cpf = bd.cpf(cpf_digitado)
         if not verificar_cpf:
             sg.popup_error('CPF INVÁLIDO')
             self.error_cpf = False
@@ -56,7 +55,7 @@ class Tela:
                 cpf_digitado = values['-CPF-']
 
                 if self.sistema_login(login_digitado) and self.sistema_senha(senha_digitada) and self.sistema_cpf(cpf_digitado):
-                    analise = base_dados.cadastrar_dados(login_digitado,senha_digitada,cpf_digitado)
+                    analise = bd.cadastrar_dados(login_digitado,senha_digitada,cpf_digitado)
                     if not analise:
                         sg.popup_error('Dados já cadastrados no sistema')
                     else:
