@@ -1,7 +1,8 @@
 from openpyxl import Workbook, load_workbook
+import requests
 
 try:
-    wb = load_workbook('dados.xlsx')
+    wb = load_workbook('data_base.xlsx')
     ws = wb.active
 except FileNotFoundError:
     wb = Workbook()
@@ -13,7 +14,8 @@ def cadastrar_sistema():
     cadastrado = False
     linha = ws.max_row + 1
     cod_sistema = f'SO{ws.max_row}'
-    sistema = input('Digite o nome do sistema: ')
+    sistema = requests.get('http://127.0.0.1:5000')
+    print(sistema)
 
     for linha_atual in ws.iter_rows(min_row=2, values_only=True):
         if sistema == linha_atual[1] or cod_sistema == linha_atual[0]:
@@ -24,7 +26,7 @@ def cadastrar_sistema():
     if not cadastrado:
         ws.cell(row=linha, column=1, value=cod_sistema)
         ws.cell(row=linha, column=2, value=sistema)
-        wb.save('dados.xlsx')
+        wb.save('data_base.xlsx')
         print('Sistema cadastrado com sucesso!')
     else:
         print('O sistema já está cadastrado.')
