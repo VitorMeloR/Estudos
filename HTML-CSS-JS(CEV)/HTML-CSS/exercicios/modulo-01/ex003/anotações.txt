@@ -1,0 +1,6 @@
+cuidado com os copyrigth
+cuidado com os tamanhos das imagens, modifique o tamanho em um edtiro de imagemm caso nescessario, tamanho ideial de 1200px para baixo
+modifique a porcentagem de qualidade
+png transparente
+jpeg imagem grande
+sites pesados nunca será uma opção
