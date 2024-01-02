@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aside box</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: grey;
+            margin: 0px;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        header{
+            margin: 10px;
+            text-align: center;
+            background-color: thistle;
+            padding: 5px;
+            border: 5px solid black;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px #0000006c;
+        }
+        header > h1{
+            font-style: italic;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 3px #0000006c;
+        }
+        nav {
+            background-color: aliceblue;
+        }
+        nav > a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.25em;
+            margin-left: 20px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: #2b46e2;
+        }
+        main{
+            margin: 10px;
+            font-size: 20px;
+
+        }
+        section#jogos{
+            background-color: aliceblue;
+            margin-top: 10px;
+            border: 3px solid blueviolet;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px rgba(100, 32, 163, 0.514);
+            text-shadow: 2px 2px 4px #00000038;
+            padding: 5px;
+        }
+        section#jogos > article > h2 {
+            margin: 0;
+            text-align: center;
+            background-color: #c7e5ff;
+        }
+        section#consoles{
+            background-color: #f0f8ff;
+            margin-top: 10px;
+            border: 3px solid #2b46e2;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px #2b46e283;
+            text-shadow: 2px 2px 4px #00000038;
+            padding: 5px;
+        }
+        section#consoles > article >h2{
+            margin: 0;
+            text-align: center;
+            background-color: #d2d5ff;
+        }
+        footer {
+            font-size: 1.25em;
+            font-weight: bold;
+            text-align: center;
+            background-color: #686868;
+            color: white;
+        }
+        footer > p{
+            text-shadow:2px 2px 3px #ffffff5b;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="jogos">
+            <article id="hackandslash">
+                <h2>Tudo sobre Games hack and slash</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eligendi officiis incidunt neque natus cumque rerum distinctio delectus illo consequatur, ex nisi exercitationem sapiente temporibus magni quos inventore itaque numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente quae quas necessitatibus recusandae ipsum cum! Provident sit ratione soluta rerum aperiam amet vero, consequuntur ex, sed placeat beatae illo.
+                </p>
+            </article>
+            <article id="RPG">
+                <h2>Tudo sobre Games</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vitae, officia expedita impedit provident explicabo, dolorum quae dolor, corporis recusandae omnis aspernatur optio tempora eos assumenda veniam! Totam, corporis non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sunt, pariatur expedita dolore animi sed repellendus! Deserunt in id laudantium eos illo saepe fugiat magni architecto porro odit, expedita placeat.</p>
+            </article>
+        </section>
+        <section id="consoles">
+            <article id="ps4">
+                <h2>Tudo sobre PS4</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ad natus voluptates quod fugiat expedita consectetur mollitia eius maxime facilis perspiciatis pariatur quia totam cupiditate fugit, quibusdam repellat nostrum blanditiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id asperiores pariatur officiis eligendi incidunt ipsa placeat molestiae consectetur necessitatibus officia distinctio laborum doloremque sapiente itaque tempora obcaecati, accusantium beatae! Deleniti.</p>
+            </article>
+            <article id="xbox">
+                <h2>Tudo sobre Xbox One X</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsa aspernatur dignissimos blanditiis provident, incidunt quidem ut tenetur eaque sit! Ea reprehenderit, quidem tenetur porro excepturi magnam impedit ut corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quidem facere tenetur laboriosam sint obcaecati quaerat reiciendis eius corrupti perspiciatis sunt eligendi suscipit molestias, alias impedit, sed culpa recusandae doloremque.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por DevReis</p>
+    </footer>
+</body>
+</html>

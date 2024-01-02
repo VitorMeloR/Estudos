@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias flexives</title>
+</head>
+<body>
+    <h1>Vamos trabalhar com imagens flexives</h1>
+    <p>tente abrir esse site em varios tamanhos de telas</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagen dinamica">
+    </picture>
+
+    <h1>Tambem podemoes carregar audios</h1>
+    <audio autoplay controls>
+        <source src="midia/op-oppenig-1.mp3" type="audio/mpeg">
+        <source src="midia/op-oppenig-1.ogg" type="audio/ogg">
+        <p>desculpe seu navegador não suporta o tipo de audio. <br><a href="midia/op-oppenig-1.mp3" download="op-oppenig-1" type="application/mpeg">use este link para baixar o audio</a></p>
+    </audio>
+</body>
+</html>
