@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dados não encontrados</h1>
+        <form action="/adicionar" method="post">
+            <label for="marca_motor">Marca do Motor:</label>
+            <input type="text" id="marca_motor" name="marca_motor" value="{{ dados['marca_motor'] }}" readonly>
+        
+            <label for="potencia">Potência:</label>
+            <input type="text" id="potencia" name="potencia" value="{{ dados['potencia'] }}" readonly>
+        
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" value="{{ dados['modelo'] }}" readonly>
+        
+            <label for="voltagem">Voltagem:</label>
+            <input type="text" id="voltagem" name="voltagem" value="{{ dados['voltagem'] }}" readonly>
+        
+            <label for="amperagem">Amperagem:</label>
+            <input type="text" id="amperagem" name="amperagem" value="{{ dados['amperagem'] }}" readonly>
+        
+            <label for="rotacao">Rotação:</label>
+            <input type="text" id="rotacao" name="rotacao" value="{{ dados['rotacao'] }}" readonly>
+        
+            <label for="pacote">Pacote:</label>
+            <input type="text" id="pacote" name="pacote" value="{{ dados['pacote'] }}" readonly>
+
+            <br>
+
+            <label for="passe_campo">Passe: Campo</label>
+            <input type="text" id="passe_campo" name="passe_campo" required>
+        
+            <label for="espiras_campo">Espiras Campo:</label>
+            <input type="text" id="espiras_campo" name="espiras_campo" required>
+        
+            <label for="fio_campo">Fio Campo:</label>
+            <input type="text" id="fio_campo" name="fio_campo" required>
+
+            <br>
+
+            <label for="passe_auxiliar">Passe: Auxiliar</label>
+            <input type="text" id="passe_auxiliar" name="passe_auxiliar" required>
+        
+            <label for="espiras_auxiliar">Espiras Auxiliar:</label>
+            <input type="text" id="espiras_auxiliar" name="espiras_auxiliar" required>
+
+            <label for="fio_auxiliar">Fio Auxiliar</label>
+            <input type="text" id="fio_auxiliar" name="fio_auxiliar" required>
+
+            <br>
+
+            <label for="ligacao">Ligação</label>
+            <input type="text" id="ligacao" name="ligacao" required>
+            
+            <br>
+
+            <button type="submit">Adicionar Dados</button>
+    </form>
+</body>
+</html>

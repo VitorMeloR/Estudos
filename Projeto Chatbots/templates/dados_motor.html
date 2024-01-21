@@ -1,0 +1,78 @@
+<!-- templates/dados_encontrados.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Encontrados</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h1, p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dados Encontrados</h1>
+
+    {% if dados_motor %}
+        <table>
+            <tr>
+                <th>Marca Motor</th>
+                <th>Potência</th>
+                <th>Modelo</th>
+                <th>Voltagem</th>
+                <th>Amperagem</th>
+                <th>Rotação</th>
+                <th>Pacote</th>
+                <th>Passe Campo</th>
+                <th>Espiras Campo</th>
+                <th>Fio Campo</th>
+                <th>Passe Auxiliar</th>
+                <th>Espiras Auxiliar</th>
+                <th>Fio Auxiliar</th>
+                <th>Ligação</th>
+            </tr>
+            {% for motor in dados_motor %}
+                <tr>
+                    <td>{{ motor[2] }}</td>
+                    <td>{{ motor[3] }}</td>
+                    <td>{{ motor[4] }}</td>
+                    <td>{{ motor[5] }}</td>
+                    <td>{{ motor[6] }}</td>
+                    <td>{{ motor[7] }}</td>
+                    <td>{{ motor[8] }}</td>
+                    <td>{{ motor[9] }}</td>
+                    <td>{{ motor[10] }}</td>
+                    <td>{{ motor[11] }}</td>
+                    <td>{{ motor[12] }}</td>
+                    <td>{{ motor[13] }}</td>
+                    <td>{{ motor[14] }}</td>
+                    <td>{{ motor[15] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <form action="{{ url_for('index') }}" method="get">
+            <button type="submit">Ir para Monofásico</button>
+        </form>
+    {% else %}
+        <p>Nenhum dado encontrado.</p>
+    {% endif %}
+</body>
+</html>

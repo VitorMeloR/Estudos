@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="/buscar_monof" method="post">
+        <label for="marca_motor">Marca do Motor:</label>
+        <input type="text" id="marca_motor" name="marca_motor" required>
+        <br>
+        <label for="potencia">Potência:</label>
+        <input type="text" id="potencia" name="potencia" required>
+        <br>
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required>
+        <br>
+        <label for="voltagem">Voltagem:</label>
+        <input type="text" id="voltagem" name="voltagem" required>
+        <br>
+        <label for="amperagem">Amperagem:</label>
+        <input type="text" id="amperagem" name="amperagem" required>
+        <br>
+        <label for="rotacao">Rotação:</label>
+        <input type="text" id="rotacao" name="rotacao" required>
+        <br>
+        <label for="pacote">Pacote (em mm):</label>
+        <input type="text" id="pacote" name="pacote" required>
+        <br>
+        <input type="submit" value="buscar">
+    </form>
+</body>
+</html>
