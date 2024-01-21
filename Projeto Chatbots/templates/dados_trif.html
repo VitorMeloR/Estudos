@@ -8,7 +8,7 @@
 <body>
     <h1>Infelizmente não achamos os dados</h1>
     <p>Por favor adicione os dados no nosso banco de dados</p>
-        <form action="/adicionar" method="post">
+        <form action="/adicionar_trif" method="post">
             <label for="marca_motor">Marca do Motor:</label>
             <input type="text" id="marca_motor" name="marca_motor" value="{{ dados['marca_motor'] }}" readonly>
         
@@ -32,29 +32,29 @@
 
             <br>
 
-            <label for="passe_campo">Passe Campo:</label>
-            <input type="text" id="passe_campo" name="passe_campo" required>
+            <label for="bobina_grupo">Bobina/Grupo</label>
+            <input type="text" id="bobina_grupo" name="bobina_grupo" required>
         
-            <label for="espiras_campo">Espiras Campo:</label>
-            <input type="text" id="espiras_campo" name="espiras_campo" required>
+            <label for="grupo_fase">Grupo/Fase:</label>
+            <input type="text" id="grupo_fase" name="grupo_fase" required>
         
-            <label for="fio_campo">Fio Campo:</label>
-            <input type="text" id="fio_campo" name="fio_campo" required>
+            <label for="camada">Camada:</label>
+            <input type="text" id="camada" name="camada" required>
 
             <br>
 
-            <label for="passe_auxiliar">Passe Auxiliar:</label>
-            <input type="text" id="passe_auxiliar" name="passe_auxiliar" required>
+            <label for="passe">Passe:</label>
+            <input type="text" id="passe" name="passe" required>
         
-            <label for="espiras_auxiliar">Espiras Auxiliar:</label>
-            <input type="text" id="espiras_auxiliar" name="espiras_auxiliar" required>
+            <label for="espiras">Espiras:</label>
+            <input type="text" id="espiras" name="espiras" required>
 
-            <label for="fio_auxiliar">Fio Auxiliar:</label>
-            <input type="text" id="fio_auxiliar" name="fio_auxiliar" required>
+            <label for="fio">Fio:</label>
+            <input type="text" id="fio" name="fio" required>
 
             <br>
 
-            <label for="ligacao">Ligação:</label>
+            <label for="ligacao">Ligação</label>
             <input type="text" id="ligacao" name="ligacao" required>
             
             <br>

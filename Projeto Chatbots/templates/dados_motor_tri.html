@@ -31,7 +31,7 @@
 <body>
     <h1>Dados Encontrados</h1>
 
-    {% if dados_motor %}
+    {% if dados_motor_trif %}
         <table>
             <tr>
                 <th>Marca Motor</th>
@@ -41,15 +41,15 @@
                 <th>Amperagem</th>
                 <th>Rotação</th>
                 <th>Pacote</th>
-                <th>Passe Campo</th>
-                <th>Espiras Campo</th>
-                <th>Fio Campo</th>
-                <th>Passe Auxiliar</th>
-                <th>Espiras Auxiliar</th>
-                <th>Fio Auxiliar</th>
+                <th>Bobina/Grupo</th>
+                <th>Grupo/fase</th>
+                <th>Camada</th>
+                <th>Passe</th>
+                <th>Espiras</th>
+                <th>Fio</th>
                 <th>Ligação</th>
             </tr>
-            {% for motor in dados_motor %}
+            {% for motor in dados_motor_trif %}
                 <tr>
                     <td>{{ motor[2] }}</td>
                     <td>{{ motor[3] }}</td>

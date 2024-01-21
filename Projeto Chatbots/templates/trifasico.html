@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Document</title>
 </head>
 <body>
     <h1>Adicione as informações sobre o motor</h1>
     <p>Caso não tenha a informação pedida, substitua por 'xxx'</p>
-    <form action="/buscar_monof" method="post">
+    <p>Por favor adicione apenas uma voltagem ou duas. O programa não suporta três tipos de voltagem, pode apresentar erro</p>
+    <form action="/buscar_trif" method="post">
         <label for="marca_motor">Marca do Motor:</label>
         <input type="text" id="marca_motor" name="marca_motor" required>
         <br>
