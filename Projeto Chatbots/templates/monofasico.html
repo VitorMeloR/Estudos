@@ -1,37 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Busca monofasico</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        body{
+            text-align: center;
+            background-color: #cccccc;
+        }
+
+        header{
+            background-color: #acabab;
+            padding: 5px;
+            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.13);
+        }
+
+        header h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        main{
+            margin: auto;
+            background-color: rgb(245, 250, 250);
+            max-width: 600px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+
+        button{
+            margin: 10px;
+            font-size: 1.2em;
+            padding: 3px;
+        }
+
+
+        input{
+            display: block;
+            margin: auto;
+        }
+
+        div#botao > input{
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Adicione as informações sobre o motor</h1>
-    <p>Caso não tenha a informação pedida, substitua por 'xxx'</p>
+    <header>
+        <h1>Adicione as informações sobre o motor</h1>
+        <p>Caso não tenha a informação pedida, substitua por 'xxx'</p>
+    </header>
     <form action="/buscar_monof" method="post">
-        <label for="marca_motor">Marca do Motor:</label>
-        <input type="text" id="marca_motor" name="marca_motor" required>
-        <br>
-        <label for="potencia">Potência:</label>
-        <input type="text" id="potencia" name="potencia" required>
-        <br>
-        <label for="modelo">Modelo:</label>
-        <input type="text" id="modelo" name="modelo" required>
-        <br>
-        <label for="voltagem">Voltagem:</label>
-        <input type="text" id="voltagem" name="voltagem" required>
-        <br>
-        <label for="amperagem">Amperagem:</label>
-        <input type="text" id="amperagem" name="amperagem" required>
-        <br>
-        <label for="rotacao">Rotação:</label>
-        <input type="text" id="rotacao" name="rotacao" required>
-        <br>
-        <label for="pacote">Pacote (em mm):</label>
-        <input type="text" id="pacote" name="pacote" required>
-        <br>
-        <input type="submit" value="buscar">
-    </form>
+        <main>
+            <label for="marca_motor">Marca do Motor:</label>
+            <input type="text" id="marca_motor" name="marca_motor" required>
+            <br>
+            <label for="potencia">Potência:</label>
+            <input type="text" id="potencia" name="potencia" required>
+            <br>
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+            <br>
+            <label for="voltagem">Voltagem:</label>
+            <input type="text" id="voltagem" name="voltagem" required>
+            <br>
+            <label for="amperagem">Amperagem:</label>
+            <input type="text" id="amperagem" name="amperagem" required>
+            <br>
+            <label for="rotacao">Rotação:</label>
+            <input type="text" id="rotacao" name="rotacao" required>
+            <br>
+            <label for="pacote">Pacote (em mm):</label>
+            <input type="text" id="pacote" name="pacote" required>
+            <br>
+            <div id="botao">
+                <input type="submit" value="buscar">
+                    </form>
+            </div>
+        </main>
 </body>
 </html>

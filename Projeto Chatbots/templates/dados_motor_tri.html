@@ -1,73 +1,66 @@
 <!-- templates/dados_encontrados.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados Encontrados</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        body{
+            font-family: Arial, Helvetica, sans-serif;
         }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
+          p{
+            font-size: 1em;
+            font-weight: bolder;
         }
-
-        th {
-            background-color: #f2f2f2;
+        div{
+            border: 3px solid black;
+            padding: 5px;
         }
-
-        h1, p {
-            margin-top: 20px;
+        button{
+            font-size: 1.2em;
         }
-    </style>
+        </style>
 </head>
 <body>
     <h1>Dados Encontrados</h1>
 
     {% if dados_motor_trif %}
-        <table>
-            <tr>
-                <th>Marca Motor</th>
-                <th>Potência</th>
-                <th>Modelo</th>
-                <th>Voltagem</th>
-                <th>Amperagem</th>
-                <th>Rotação</th>
-                <th>Pacote</th>
-                <th>Bobina/Grupo</th>
-                <th>Grupo/fase</th>
-                <th>Camada</th>
-                <th>Passe</th>
-                <th>Espiras</th>
-                <th>Fio</th>
-                <th>Ligação</th>
-            </tr>
-            {% for motor in dados_motor_trif %}
-                <tr>
-                    <td>{{ motor[2] }}</td>
-                    <td>{{ motor[3] }}</td>
-                    <td>{{ motor[4] }}</td>
-                    <td>{{ motor[5] }}</td>
-                    <td>{{ motor[6] }}</td>
-                    <td>{{ motor[7] }}</td>
-                    <td>{{ motor[8] }}</td>
-                    <td>{{ motor[9] }}</td>
-                    <td>{{ motor[10] }}</td>
-                    <td>{{ motor[11] }}</td>
-                    <td>{{ motor[12] }}</td>
-                    <td>{{ motor[13] }}</td>
-                    <td>{{ motor[14] }}</td>
-                    <td>{{ motor[15] }}</td>
-                </tr>
-            {% endfor %}
-        </table>
+        {% for motor in dados_motor_trif %}
+                <div>
+                    <p>Marca Motor: {{ motor[2] }}</p>
+                    <hr>
+                    <p>Potência: {{ motor[3] }}</p>
+                    <hr>
+                    <p>Modelo: {{ motor[4] }}</p>
+                    <hr>
+                    <p>Voltagem: {{ motor[5] }}</p>
+                    <hr>
+                    <p>Amperagem: {{ motor[6] }}</p>
+                    <hr>
+                    <p>Rotação: {{ motor[7] }}</p>
+                    <hr>
+                    <p>Pacote:{{ motor[8] }}</p>
+                </div>
+                <div>
+                    <p>Bobina/Grupo: {{ motor[9] }}</p>
+                    <hr>
+                    <p>Grupo/fase: {{ motor[10] }}</p>
+                    <hr>
+                    <p>Camada: {{ motor[11] }}</p>
+                </div>
+                <div>
+                    <p>Passe: {{ motor[12] }}</p>
+                    <hr>
+                    <p>Espiras: {{ motor[13] }}</p>
+                    <hr>
+                    <p>Fio: {{ motor[14] }}</p>
+                </div>
+                <div>
+                    <p>Ligação: {{ motor[15] }}</p>
+                </div>
+        {% endfor %}
         <form action="{{ url_for('index') }}" method="get">
             <button type="submit">Ir para página principal</button>
         </form>

@@ -4,62 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados não encontrados</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        body{
+            text-align: center;
+            background-color: #cccccc;
+        }
+
+        header{
+            background-color: #acabab;
+            padding: 5px;
+            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.13);
+        }
+
+        header h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        main{
+            margin: auto;
+            background-color: rgb(245, 250, 250);
+            max-width: 600px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+
+        button{
+            margin: 10px;
+            font-size: 1.2em;
+            padding: 3px;
+        }
+
+
+        input{
+            display: block;
+            margin: auto;
+        }
+
+        div{
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        div#botao > input{
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Infelizmente não achamos os dados</h1>
-    <p>Por favor adicione os dados no nosso banco de dados</p>
-        <form action="/adicionar_trif" method="post">
-            <label for="marca_motor">Marca do Motor:</label>
-            <input type="text" id="marca_motor" name="marca_motor" value="{{ dados['marca_motor'] }}" readonly>
-        
-            <label for="potencia">Potência:</label>
-            <input type="text" id="potencia" name="potencia" value="{{ dados['potencia'] }}" readonly>
-        
-            <label for="modelo">Modelo:</label>
-            <input type="text" id="modelo" name="modelo" value="{{ dados['modelo'] }}" readonly>
-        
-            <label for="voltagem">Voltagem:</label>
-            <input type="text" id="voltagem" name="voltagem" value="{{ dados['voltagem'] }}" readonly>
-        
-            <label for="amperagem">Amperagem:</label>
-            <input type="text" id="amperagem" name="amperagem" value="{{ dados['amperagem'] }}" readonly>
-        
-            <label for="rotacao">Rotação:</label>
-            <input type="text" id="rotacao" name="rotacao" value="{{ dados['rotacao'] }}" readonly>
-        
-            <label for="pacote">Pacote:</label>
-            <input type="text" id="pacote" name="pacote" value="{{ dados['pacote'] }}" readonly>
-
-            <br>
-
-            <label for="bobina_grupo">Bobina/Grupo</label>
-            <input type="text" id="bobina_grupo" name="bobina_grupo" required>
-        
-            <label for="grupo_fase">Grupo/Fase:</label>
-            <input type="text" id="grupo_fase" name="grupo_fase" required>
-        
-            <label for="camada">Camada:</label>
-            <input type="text" id="camada" name="camada" required>
-
-            <br>
-
-            <label for="passe">Passe:</label>
-            <input type="text" id="passe" name="passe" required>
-        
-            <label for="espiras">Espiras:</label>
-            <input type="text" id="espiras" name="espiras" required>
-
-            <label for="fio">Fio:</label>
-            <input type="text" id="fio" name="fio" required>
-
-            <br>
-
-            <label for="ligacao">Ligação</label>
-            <input type="text" id="ligacao" name="ligacao" required>
+    <header>
+        <h1>Infelizmente não achamos os dados</h1>
+        <p>Por favor adicione os dados no nosso banco de dados</p>
+    </header>
+        <main>
+            <form action="/adicionar_trif" method="post">
+                <div>
+                    <label for="marca_motor">Marca do Motor:</label>
+                    <input type="text" id="marca_motor" name="marca_motor" value="{{ dados['marca_motor'] }}" readonly>
+                    <br>
+                    <hr>
+                    <label for="potencia">Potência:</label>
+                    <input type="text" id="potencia" name="potencia" value="{{ dados['potencia'] }}" readonly>
+                    <br>
+                    <hr>        
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" value="{{ dados['modelo'] }}" readonly>
+                    <br>
+                    <hr>
+                    <label for="voltagem">Voltagem:</label>
+                    <input type="text" id="voltagem" name="voltagem" value="{{ dados['voltagem'] }}" readonly>
+                    <br>
+                    <hr>
+                    <label for="amperagem">Amperagem:</label>
+                    <input type="text" id="amperagem" name="amperagem" value="{{ dados['amperagem'] }}" readonly>
+                    <br>
+                    <hr>
+                    <label for="rotacao">Rotação:</label>
+                    <input type="text" id="rotacao" name="rotacao" value="{{ dados['rotacao'] }}" readonly>
+                    <br>
+                    <hr>
+                    <label for="pacote">Pacote:</label>
+                    <input type="text" id="pacote" name="pacote" value="{{ dados['pacote'] }}" readonly>
+                </div>
+                <br>
+                <div>
+                    <label for="bobina_grupo">Bobina/Grupo</label>
+                    <input type="text" id="bobina_grupo" name="bobina_grupo" required>
+                    <br>
+                    <hr>
+                    <label for="grupo_fase">Grupo/Fase:</label>
+                    <input type="text" id="grupo_fase" name="grupo_fase" required>
+                    <br>
+                    <hr>
+                    <label for="camada">Camada:</label>
+                    <input type="text" id="camada" name="camada" required>
+                </div>
+                <br>
+                <div>
+                    <label for="passe">Passe:</label>
+                    <input type="text" id="passe" name="passe" required>
+                <br>
+                <hr>
             
-            <br>
 
-            <button type="submit">Adicionar Dados</button>
-    </form>
+                    <label for="espiras">Espiras:</label>
+                    <input type="text" id="espiras" name="espiras" required>
+                <br>
+                <hr>
+
+                    <label for="fio">Fio:</label>
+                    <input type="text" id="fio" name="fio" required>
+                </div>
+                <br>
+                <div>
+                    <label for="ligacao">Ligação</label>
+                    <input type="text" id="ligacao" name="ligacao" required>
+                </div>
+            
+                <br>
+                <button type="submit">Adicionar Dados</button>
+                </form>
+        </main>
 </body>
 </html>

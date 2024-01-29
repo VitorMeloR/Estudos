@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo</title>
+    <style>
+        div{
+            width: 100%;
+            height: 400px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        div#area01{
+            background-image: url(imagens/pattern001.png);
+            background-repeat: repeat;
+        }
+        div#area02{
+            background-image: url(imagens/pattern002.png);
+            background-repeat: repeat-x;
+        }
+        div#area03{
+            background-image: url(imagens/pattern003.png);
+            background-repeat: repeat-y;
+        }
+        div#area04{
+            background-image: url(imagens/pattern004.png);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal</p>
+    <div id="area01"></div>
+    <p>Repete a imagem no sentido horizontal</p>
+    <div id="area02"></div>
+    <p>Repete a imagem no sentido vertical</p>
+    <div id="area03"></div>
+    <p>Não repete a imagem</p>
+    <div id="area04"></div>
+</body>
+</html>
