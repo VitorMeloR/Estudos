@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body{
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+    
+    
+}
+
+img{
+    border: 2px solid blue;
+}
+
+div
+
+a:hover{
+    background-color: blue;
+}
