@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    font-family: sans-serif;
+}
+
+img#cake {
+    max-width: 400px;
+}
+
+div {
+    margin: 1em 0;
+}
+
+input {
+    padding: 0.5em;
+}
+
+#daysTilBirthday {
+    color: #fff;
+    padding: 0.5em;
+    background-color: #3333DD;
+    border-radius: 10px;
+}
