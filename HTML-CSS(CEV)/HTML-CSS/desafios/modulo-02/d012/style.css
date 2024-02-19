@@ -3,6 +3,7 @@
 html,body{
     margin: 0;
     padding: 0;
+    font-size: 4vw;
 }
 
 header{
@@ -39,7 +40,7 @@ section > p{
 }
 
 .imagem00{
-    width: 97vh;
+
     background-image: url(./imagens/background001.jpg);
     background-position: right center;
     background-size: cover;
@@ -47,24 +48,17 @@ section > p{
     box-shadow: inset 0px 0px 10px black;
 }
 
-.imagem00 > p{
-    background-color: #5050507a;
-    display: inline-block;
-    padding: 10px;
-    text-shadow: 2px 2px 5px #00000085;
-}
-
 .imagem01{
-    width: 97vh;
     background-image: url(./imagens/background002.jpg);
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 0px 0px 10px black;
 }
-
-.imagem01 > p{
+.imagem00 > p, .imagem01 > p{
     background-color: #5050507a;
     display: inline-block;
+    margin-left: 5px;
     padding: 10px;
-    text-shadow: 2px 2px 3px #00000085;
+    text-shadow: 2px 2px 5px #00000085;
 }

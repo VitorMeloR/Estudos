@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex tabela</title>
+    <style>
+        #coluna01{
+            background-color: aqua;
+        }
+        #coluna02{
+            background-color: yellow;
+        }
+        #coluna03{
+            background-color: brown;
+        }
+        #coluna04{
+            background-color: cadetblue;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border: 2px solid salmon;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black; 
+            text-align: center;
+        }
+
+        caption{
+            font-size: 1.5em;
+            background-color: lightgray;
+        }
+    
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col id="coluna01">
+            <col id="coluna02">
+            <col id="coluna03">
+            <col id="coluna04">
+        </colgroup>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+            <td>08</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+</body>
+</html>
